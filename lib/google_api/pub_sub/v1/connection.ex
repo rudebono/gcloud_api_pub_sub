@@ -31,5 +31,5 @@ defmodule GoogleApi.PubSub.V1.Connection do
       "https://www.googleapis.com/auth/pubsub"
     ],
     otp_app: :google_api_pub_sub,
-    base_url: Application.compile_env(:google_api_pub_sub, :base_url, "https://pubsub.googleapis.com/")
+    base_url: Application.get_env(:google_api_pub_sub, :base_url, "https://pubsub.googleapis.com/")
 end
